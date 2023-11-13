@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #ffc700;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+}
+
+.header, .main, .footer{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+}
+
+.header__titulo {
+    text-align: center;
+    color: beige;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header__descripcion {
+    font-style: italic;
+    text-align: center;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+/* Seccion 1 */
+
+.seccion1 {
+    padding: 1rem;
+}
+
+.seccion1__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.seccion1__item {
+    border-radius: 0.5rem;
+}
+
+.seccion1__enlace {
+    background-color: #ffc700;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: inherit;
+    text-decoration: none;
+    
+}
+
+/*Seccion 2*/
+
+.seccion2 {
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.seccion2__iframe {
+    padding: 1rem;
+    height: 400px;
+}
+
+/*Seccion 3*/
+
+.seccion3 {
+    padding: 1rem;
+}
+
+.seccion3__lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.seccion3__item {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #ffc700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.seccion3__enlace {
+    color: #ffc700;
+    text-decoration: none;
+}
+
+/*Seccion 4*/
+
+.seccion4 {
+    padding: 1rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300px;
+}
+
+.seccion4__sponsor {
+    display: block;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/*Footer*/
+
+.footer {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Seccion 5*/
+
+.seccion5 {
+    padding: 2rem;
+}
+.seccion5__boton {
+    background-color: #ffc700;
+    border-color: #ffc700;
+
+}
+
+.seccion5__boton:hover {
+    background-color: black;
+}
+
+
+/* Media Querys */
+
+@media (min-width: 768px) {
+    .header__titulo {
+        font-size: 60px;
+    }
+    .header__descripcion {
+        font-size: 30px;
+    }
+}
