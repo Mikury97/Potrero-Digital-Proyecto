@@ -128,6 +128,9 @@ ul {
     color: #ffc700;
     text-decoration: none;
 }
+.seccion3__image {
+    padding: 1.5rem;
+}
 
 /*Seccion 4*/
 
@@ -149,9 +152,18 @@ ul {
 
 .footer {
     height: 300px;
-    display: flex;
+    display: block;
     flex-direction: row;
     align-items: center;
+    
+}
+.footer__ancla {
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: none;
+    padding: 1rem; 
 }
 
 /*Seccion 5*/
@@ -173,6 +185,9 @@ ul {
 /* Media Querys */
 
 @media (min-width: 768px) {
+    .header {
+        max-width: 900px;
+    }
     .header__titulo {
         font-size: 60px;
     }
@@ -180,7 +195,16 @@ ul {
         font-size: 30px;
     }
     .footer {
+        height: 400px;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+    .seccion3__item {
+        font-size: 22px;
+    }
+}
+@media (min-width: 1024px) {
+    .footer__ancla {
+        display: block;
+    } 
 }
